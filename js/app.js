@@ -13,8 +13,27 @@
 
   // Manhattan (ubicación fija; la app no usa la ubicación del móvil)
   var TIEMPO_URL = 'https://api.open-meteo.com/v1/forecast?latitude=40.7831&longitude=-73.9712' +
-    '&current=temperature_2m&daily=temperature_2m_max,temperature_2m_min' +
+    '&current=temperature_2m,weather_code,is_day&daily=temperature_2m_max,temperature_2m_min' +
     '&temperature_unit=celsius&timezone=America%2FNew_York&forecast_days=1';
+
+  // Código del tiempo del servicio (WMO) -> icono de icons/. Dos nombres = [día, noche].
+  // Sin icono propio (niebla, llovizna helada, lluvia helada) y códigos desconocidos: cloudy.svg
+  var ICONO_TIEMPO = {
+    0: ['day', 'night'], 1: ['day', 'night'],
+    2: ['cloudy-day-1', 'cloudy-night-1'],
+    3: 'cloudy',
+    51: 'rainy-1', 53: 'rainy-1', 55: 'rainy-3',
+    61: 'rainy-1', 63: 'rainy-3', 65: 'rainy-6',
+    80: 'rainy-1', 81: 'rainy-3', 82: 'rainy-6',
+    71: 'snowy-3', 73: 'snowy-5', 75: 'snowy-6', 77: 'snowy-3',
+    85: 'snowy-3', 86: 'snowy-6',
+    95: 'thunder', 96: 'thunder', 99: 'thunder'
+  };
+  function iconoTiempo(codigo, esDia) {
+    var e = ICONO_TIEMPO[codigo];
+    if (Array.isArray(e)) return e[esDia ? 0 : 1];
+    return e || 'cloudy';
+  }
 
   var REDUCIR = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
 
@@ -111,7 +130,9 @@
         var mx = j && j.daily && j.daily.temperature_2m_max && j.daily.temperature_2m_max[0];
         var mn = j && j.daily && j.daily.temperature_2m_min && j.daily.temperature_2m_min[0];
         [t, mx, mn].forEach(function (v) { if (typeof v !== 'number' || !isFinite(v)) { throw new Error('datos'); } });
-        estado.tiempo = { estado: 'ok', actual: Math.round(t), max: Math.round(mx), min: Math.round(mn) };
+        var codigo = j.current.weather_code;
+        var esDia = j.current.is_day !== 0;
+        estado.tiempo = { estado: 'ok', actual: Math.round(t), max: Math.round(mx), min: Math.round(mn), icono: iconoTiempo(codigo, esDia) };
       })
       .catch(function () { estado.tiempo = { estado: 'error' }; })
       .then(function () { clearTimeout(corte); pintarTiempo(); });
@@ -125,7 +146,7 @@
     if (t.estado === 'ok') {
       temp.textContent = t.actual + '°';
       temp.hidden = false;
-      pil.innerHTML = '<span class="ic ic-tiempo"></span><span>Máx. ' + t.max + '°</span><span aria-hidden="true">·</span><span>Mín. ' + t.min + '°</span>';
+      pil.innerHTML = '<img src="icons/' + t.icono + '.svg" alt="" width="24" height="24"><span>Máx. ' + t.max + '°</span><span aria-hidden="true">·</span><span>Mín. ' + t.min + '°</span>';
       pil.hidden = false;
     } else if (t.estado === 'error') {
       temp.hidden = true;
