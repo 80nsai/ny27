@@ -1,0 +1,169 @@
+/* NY27 — estilos. Fuente de verdad: DESIGN.md y frames de Figma (Día, Zona, Cómo llegar). */
+
+/* ---------- Fuente Inter (local, SIL OFL). Pesos 400, 500, 700 ---------- */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;
+  src:url("../fonts/inter-latin-ext-400-normal.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;
+  src:url("../fonts/inter-latin-400-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;
+  src:url("../fonts/inter-latin-ext-500-normal.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;
+  src:url("../fonts/inter-latin-500-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;
+  src:url("../fonts/inter-latin-ext-700-normal.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;
+  src:url("../fonts/inter-latin-700-normal.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+/* ---------- Tokens (DESIGN.md, sección 3) ---------- */
+:root{
+  --zinc-100:#F1F5F9; --zinc-300:#CBD5E1; --zinc-400:#94A3B8; --zinc-500:#64748B;
+  --zinc-600:#475569; --zinc-700:#334155; --zinc-800:#1E293B; --zinc-900:#0F172A;
+  --neutral-500:#6B7280; --white:#FFFFFF; --black:#000000;
+  --primary-100:#B8DCFF; --info-500:#3B82F6; --pill-bg:rgba(26,26,26,.7);
+  --text-default:#1E293B; --text-soft:#64748B;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --margen:16px;
+}
+
+/* ---------- Base ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+html.pantalla-dia{background:var(--zinc-800)}
+html.pantalla-clara{background:var(--zinc-100)}
+body{margin:0;font-family:"Inter",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;line-height:1.4;font-weight:400;color:var(--white);background:transparent;
+  -webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;margin:0;text-align:left;cursor:pointer}
+a{color:inherit;text-decoration:none}
+h1,h2,p,ul{margin:0;padding:0}
+ul{list-style:none}
+[hidden]{display:none!important}
+
+/* Contenedor de pantalla: 393 px de diseño (iPhone 15 vertical) */
+.pantalla{position:relative;width:100%;max-width:393px;margin:0 auto;min-height:100vh;min-height:100dvh}
+
+/* Iconos: los SVG de icons/ se colorean con la propiedad color mediante máscara */
+.ic{display:inline-block;flex:none;width:24px;height:24px;background-color:currentColor;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;
+  -webkit-mask-size:contain;mask-size:contain}
+.ic-sec{width:20px;height:20px}
+.ic-tiempo{-webkit-mask-image:url("../icons/tiempo.svg");mask-image:url("../icons/tiempo.svg")}
+.ic-tren{-webkit-mask-image:url("../icons/tren.svg");mask-image:url("../icons/tren.svg")}
+.ic-chevron{-webkit-mask-image:url("../icons/chevron-derecha.svg");mask-image:url("../icons/chevron-derecha.svg")}
+.ic-flecha{-webkit-mask-image:url("../icons/flecha-45.svg");mask-image:url("../icons/flecha-45.svg")}
+.ic-volver{-webkit-mask-image:url("../icons/flecha-izquierda.svg");mask-image:url("../icons/flecha-izquierda.svg")}
+.ic-pin{-webkit-mask-image:url("../icons/pin.svg");mask-image:url("../icons/pin.svg")}
+.ic-lugares{-webkit-mask-image:url("../icons/lugares.svg");mask-image:url("../icons/lugares.svg")}
+.ic-comer{-webkit-mask-image:url("../icons/comer.svg");mask-image:url("../icons/comer.svg")}
+.ic-tiendas{-webkit-mask-image:url("../icons/tiendas.svg");mask-image:url("../icons/tiendas.svg")}
+.ic-cine{-webkit-mask-image:url("../icons/cine.svg");mask-image:url("../icons/cine.svg")}
+.ic-wc{-webkit-mask-image:url("../icons/wc.svg");mask-image:url("../icons/wc.svg")}
+
+/* ---------- Movimiento de entrada (DESIGN.md, sección 11) ---------- */
+@keyframes subir{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes fundido{from{opacity:0}to{opacity:1}}
+.anim-sube{animation:subir 600ms var(--ease) var(--d,0ms) both}
+.anim-funde{animation:fundido 600ms var(--ease) var(--d,0ms) both}
+@media (prefers-reduced-motion:reduce){
+  .anim-sube,.anim-funde{animation:none}
+}
+
+/* ---------- Pantalla Día (fondo zinc/800) ---------- */
+.dia-hero{position:absolute;top:0;left:0;width:100%;height:218px;object-fit:cover;display:block;
+  z-index:0;pointer-events:none;-webkit-user-drag:none;user-select:none}
+.dia-cab{position:absolute;top:0;left:0;right:0;height:180px;z-index:1;padding:8px var(--margen) 0}
+.dia-cab-texto{width:180px;height:124px}
+.d-xl{font-size:52px;font-weight:400;line-height:1.2;letter-spacing:-.02em;color:var(--white)}
+.pildora{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:8px;
+  background:var(--pill-bg);font-size:14px;line-height:1.4;color:var(--white);white-space:nowrap}
+.dia-cuerpo{position:relative;z-index:1;padding:196px var(--margen) calc(16px + env(safe-area-inset-bottom,0px))}
+
+/* Tabs de días: seis, misma anchura, separación 8 */
+.tabs{display:flex;gap:8px}
+.tab{flex:1 1 0;min-width:0;height:78px;padding:16px 11px;border-radius:40px;
+  display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;
+  background:var(--zinc-600)}
+.tab-fecha{font-size:12px;line-height:1.4;min-height:17px;color:var(--zinc-400)}
+.tab-num{font-size:18px;font-weight:700;line-height:1.4;color:var(--zinc-300)}
+.tab[aria-selected="true"]{background:var(--white)}
+.tab[aria-selected="true"] .tab-fecha{color:var(--zinc-500)}
+.tab[aria-selected="true"] .tab-num{color:var(--zinc-900)}
+.fecha-dia{margin-top:8px;font-size:14px;line-height:1.4;color:var(--zinc-300);min-height:20px}
+
+/* Ruta: módulos separados 24 px; dentro, etiqueta y tarjetas separadas 8 px */
+.ruta{display:flex;flex-direction:column;gap:24px;margin-top:24px}
+.modulo{display:flex;flex-direction:column;gap:8px}
+.etiqueta{align-self:flex-start;padding:4px 12px;border-radius:12px;background:var(--white);
+  font-size:12px;font-weight:700;line-height:1.4;color:var(--zinc-800)}
+
+/* Tarjeta de transporte (el borde de 2 px cuenta dentro de los 8×14 de Figma) */
+.tarjeta-trans{display:flex;align-items:center;gap:12px;width:100%;padding:6px 12px;
+  border:2px solid var(--neutral-500);border-radius:8px}
+.tarjeta-trans .ic-tren{color:var(--zinc-300)}
+.tarjeta-trans .ic-chevron{color:var(--white)}
+.trans-texto{flex:1;min-width:0}
+.trans-titulo,.trans-sub{display:block}
+.trans-titulo{font-size:16px;line-height:1.4;color:var(--zinc-100)}
+.trans-sub{font-size:14px;line-height:1.4;color:var(--zinc-300)}
+
+/* Tarjeta de zona */
+.tarjeta-zona{display:flex;flex-direction:column;justify-content:flex-end;gap:8px;width:100%;
+  min-height:88px;padding:16px;border-radius:8px;background:var(--primary-100)}
+.zona-nombre{font-size:20px;font-weight:500;line-height:1.2;color:var(--black)}
+.zona-flecha{display:flex;justify-content:flex-end}
+.zona-flecha .ic{color:var(--black)}
+
+/* ---------- Pantallas claras: Zona y Cómo llegar (fondo zinc/100) ---------- */
+.pantalla-interior{padding:var(--margen) var(--margen) calc(16px + env(safe-area-inset-bottom,0px));
+  display:flex;flex-direction:column;gap:24px;color:var(--text-default)}
+.volver{display:inline-flex;align-items:center;gap:4px;padding:8px 0;min-height:40px;align-self:flex-start;
+  font-size:16px;font-weight:700;line-height:1.4;color:var(--zinc-800)}
+.volver .ic{color:var(--zinc-800)}
+
+/* Cabecera de zona */
+.zona-cab{padding:16px;border-radius:8px;background:var(--primary-100);display:flex;flex-direction:column;gap:8px}
+.zona-cab h1{font-size:28px;font-weight:400;line-height:1.2;color:var(--text-default)}
+.zona-cab p{font-size:16px;line-height:1.4;color:var(--zinc-600)}
+
+/* Accesos rápidos */
+.accesos{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.accesos::-webkit-scrollbar{display:none}
+.acceso{flex:none;padding:8px 16px;border-radius:24px;background:var(--white);
+  font-size:14px;font-weight:700;line-height:1.4;color:var(--zinc-500)}
+.acceso[aria-pressed="true"]{background:var(--zinc-600);color:var(--white)}
+
+/* Secciones de la ficha */
+.secciones{display:flex;flex-direction:column;gap:32px}
+.seccion{scroll-margin-top:16px}
+.seccion-titulo{display:flex;align-items:center;gap:8px;padding:8px 0;margin-bottom:8px;
+  font-size:14px;font-weight:700;line-height:1.4;text-transform:uppercase;color:var(--zinc-500)}
+.lista{display:flex;flex-direction:column;gap:8px}
+.elemento{display:flex;align-items:center;gap:12px;padding:16px 14px;border-radius:8px;background:var(--white)}
+.elemento-texto{flex:1;min-width:0}
+.elemento-nombre{font-size:18px;line-height:1.4;color:var(--zinc-700);overflow-wrap:anywhere}
+/* Descripción opcional del elemento: estilo provisional (DESIGN.md, sección 12) */
+.elemento-desc{margin-top:8px;font-size:14px;line-height:1.4;color:var(--zinc-500)}
+.elemento .ic-pin{color:var(--info-500)}
+
+/* Cómo llegar */
+.trans-cab{padding:16px 0;display:flex;flex-direction:column;gap:8px}
+.trans-cab-fila{display:flex;align-items:center;gap:8px}
+.trans-cab-fila .ic{color:var(--zinc-500)}
+.trans-cab h1{font-size:28px;font-weight:400;line-height:1.2;color:var(--text-default)}
+.trans-cab p{font-size:20px;font-weight:500;line-height:1.2;color:var(--text-soft)}
+.pasos{display:flex;flex-direction:column}
+.conector{width:2px;height:32px;margin-left:32px;border-radius:1px;background:var(--zinc-400)}
+.paso-tarjeta{padding:8px 16px;border-radius:8px;background:var(--white);display:flex;flex-direction:column;gap:4px}
+.paso-tarjeta.paso-linea{padding:16px}
+.paso-cat{font-size:14px;font-weight:700;line-height:1.4;text-transform:uppercase;color:var(--zinc-400)}
+.paso-valor{font-size:18px;line-height:1.4;color:var(--text-soft);overflow-wrap:anywhere}
+.paso-valor.h4{font-size:20px;font-weight:500;line-height:1.2}
+.linea-circulo{width:40px;height:40px;border-radius:24px;background:var(--zinc-600);
+  display:flex;align-items:center;justify-content:center;
+  font-size:24px;font-weight:500;line-height:1.2;color:var(--white)}

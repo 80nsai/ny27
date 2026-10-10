@@ -1,0 +1,150 @@
+{
+  "_aviso": "DATOS DE EJEMPLO. Contenido ficticio para probar la app; no es un lugar real. Sustituir por el contenido del autor.",
+  "dia": 6,
+  "fecha": "2027-03-26",
+  "transporte": {
+    "minutos": 30,
+    "linea": "G",
+    "salida": "Estación de ejemplo 6-salida",
+    "direccion": "Dirección de ejemplo 6",
+    "llegada": "Estación de ejemplo 6-llegada",
+    "transbordos": "Sin transbordos"
+  },
+  "tramos": [
+    {
+      "etiqueta": "Mañana",
+      "zonas": [
+        {
+          "id": "d6-z1",
+          "nombre": "Zona de ejemplo A6",
+          "descripcion": "Texto de ejemplo de la zona 1 del día 6. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 6.1.1",
+              "direccion": "Dirección de ejemplo 6.1.1",
+              "descripcion": "Descripción de ejemplo 6.1.1."
+            },
+            {
+              "nombre": "Lugar de ejemplo 6.1.2",
+              "direccion": "Dirección de ejemplo 6.1.2",
+              "descripcion": "Descripción de ejemplo 6.1.2."
+            }
+          ],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 6.1.1",
+              "direccion": "Dirección de ejemplo 6.1.1",
+              "descripcion": "Descripción de ejemplo 6.1.1."
+            }
+          ],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 6.1.1",
+              "direccion": "Dirección de ejemplo 6.1.1",
+              "descripcion": "Descripción de ejemplo 6.1.1."
+            }
+          ],
+          "cine": [
+            {
+              "nombre": "Escenario de ejemplo 6.1.1",
+              "direccion": "Dirección de ejemplo 6.1.1",
+              "descripcion": "Descripción de ejemplo 6.1.1."
+            }
+          ],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 6.1.1",
+              "direccion": "Dirección de ejemplo 6.1.1",
+              "descripcion": "Descripción de ejemplo 6.1.1."
+            }
+          ]
+        },
+        {
+          "id": "d6-z2",
+          "nombre": "Zona de ejemplo B6",
+          "descripcion": "Texto de ejemplo de la zona 2 del día 6. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 6.2.1",
+              "direccion": "Dirección de ejemplo 6.2.1",
+              "descripcion": "Descripción de ejemplo 6.2.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": []
+        }
+      ]
+    },
+    {
+      "etiqueta": "Comida",
+      "zonas": [
+        {
+          "id": "d6-z3",
+          "nombre": "Zona de ejemplo C6",
+          "descripcion": "Texto de ejemplo de la zona 3 del día 6. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 6.3.1",
+              "direccion": "Dirección de ejemplo 6.3.1",
+              "descripcion": "Descripción de ejemplo 6.3.1."
+            },
+            {
+              "nombre": "Sitio para comer de ejemplo 6.3.2",
+              "direccion": "Dirección de ejemplo 6.3.2",
+              "descripcion": "Descripción de ejemplo 6.3.2."
+            }
+          ],
+          "tiendas": [],
+          "cine": [],
+          "wc": []
+        }
+      ]
+    },
+    {
+      "etiqueta": "Tarde",
+      "zonas": [
+        {
+          "id": "d6-z4",
+          "nombre": "Zona de ejemplo D6",
+          "descripcion": "Texto de ejemplo de la zona 4 del día 6. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 6.4.1",
+              "direccion": "Dirección de ejemplo 6.4.1",
+              "descripcion": "Descripción de ejemplo 6.4.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 6.4.1",
+              "direccion": "Dirección de ejemplo 6.4.1",
+              "descripcion": "Descripción de ejemplo 6.4.1."
+            },
+            {
+              "nombre": "Tienda de ejemplo 6.4.2",
+              "direccion": "Dirección de ejemplo 6.4.2",
+              "descripcion": "Descripción de ejemplo 6.4.2."
+            }
+          ],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 6.4.1",
+              "direccion": "Dirección de ejemplo 6.4.1",
+              "descripcion": "Descripción de ejemplo 6.4.1."
+            },
+            {
+              "nombre": "WC de ejemplo 6.4.2",
+              "direccion": "Dirección de ejemplo 6.4.2",
+              "descripcion": "Descripción de ejemplo 6.4.2."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

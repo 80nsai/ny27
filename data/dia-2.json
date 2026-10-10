@@ -1,0 +1,158 @@
+{
+  "_aviso": "DATOS DE EJEMPLO. Contenido ficticio para probar la app; no es un lugar real. Sustituir por el contenido del autor.",
+  "dia": 2,
+  "fecha": "2027-03-22",
+  "transporte": {
+    "minutos": 35,
+    "linea": "B",
+    "salida": "Estación de ejemplo 2-salida",
+    "direccion": "Dirección de ejemplo 2",
+    "llegada": "Estación de ejemplo 2-llegada",
+    "transbordos": "Cambio en Estación de ejemplo 2-cambio (línea C)"
+  },
+  "tramos": [
+    {
+      "etiqueta": "Mañana",
+      "zonas": [
+        {
+          "id": "d2-z1",
+          "nombre": "Zona de ejemplo A2",
+          "descripcion": "Texto de ejemplo de la zona 1 del día 2. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 2.1.1",
+              "direccion": "Dirección de ejemplo 2.1.1",
+              "descripcion": "Descripción de ejemplo 2.1.1."
+            },
+            {
+              "nombre": "Lugar de ejemplo 2.1.2",
+              "direccion": "Dirección de ejemplo 2.1.2"
+            }
+          ],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 2.1.1",
+              "direccion": "Dirección de ejemplo 2.1.1"
+            },
+            {
+              "nombre": "Sitio para comer de ejemplo 2.1.2",
+              "direccion": "Dirección de ejemplo 2.1.2",
+              "descripcion": "Descripción de ejemplo 2.1.2."
+            },
+            {
+              "nombre": "Sitio para comer de ejemplo 2.1.3",
+              "direccion": "Dirección de ejemplo 2.1.3",
+              "descripcion": "Descripción de ejemplo 2.1.3."
+            }
+          ],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 2.1.1",
+              "direccion": "Dirección de ejemplo 2.1.1",
+              "descripcion": "Descripción de ejemplo 2.1.1."
+            },
+            {
+              "nombre": "Tienda de ejemplo 2.1.2",
+              "direccion": "Dirección de ejemplo 2.1.2",
+              "descripcion": "Descripción de ejemplo 2.1.2."
+            },
+            {
+              "nombre": "Tienda de ejemplo 2.1.3",
+              "direccion": "Dirección de ejemplo 2.1.3",
+              "descripcion": "Descripción de ejemplo 2.1.3."
+            }
+          ],
+          "cine": [
+            {
+              "nombre": "Escenario de ejemplo 2.1.1",
+              "direccion": "Dirección de ejemplo 2.1.1",
+              "descripcion": "Descripción de ejemplo 2.1.1."
+            },
+            {
+              "nombre": "Escenario de ejemplo 2.1.2",
+              "direccion": "Dirección de ejemplo 2.1.2",
+              "descripcion": "Descripción de ejemplo 2.1.2."
+            }
+          ],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 2.1.1",
+              "direccion": "Dirección de ejemplo 2.1.1",
+              "descripcion": "Descripción de ejemplo 2.1.1."
+            },
+            {
+              "nombre": "WC de ejemplo 2.1.2",
+              "direccion": "Dirección de ejemplo 2.1.2",
+              "descripcion": "Descripción de ejemplo 2.1.2."
+            },
+            {
+              "nombre": "WC de ejemplo 2.1.3",
+              "direccion": "Dirección de ejemplo 2.1.3",
+              "descripcion": "Descripción de ejemplo 2.1.3."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etiqueta": "Tarde",
+      "zonas": [
+        {
+          "id": "d2-z2",
+          "nombre": "Zona de ejemplo B2",
+          "descripcion": "Texto de ejemplo de la zona 2 del día 2. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 2.2.1",
+              "direccion": "Dirección de ejemplo 2.2.1",
+              "descripcion": "Descripción de ejemplo 2.2.1."
+            }
+          ],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 2.2.1",
+              "direccion": "Dirección de ejemplo 2.2.1",
+              "descripcion": "Descripción de ejemplo 2.2.1."
+            }
+          ],
+          "tiendas": [],
+          "cine": [
+            {
+              "nombre": "Escenario de ejemplo 2.2.1",
+              "direccion": "Dirección de ejemplo 2.2.1",
+              "descripcion": "Descripción de ejemplo 2.2.1."
+            }
+          ],
+          "wc": []
+        },
+        {
+          "id": "d2-z3",
+          "nombre": "Zona de ejemplo C2",
+          "descripcion": "Texto de ejemplo de la zona 3 del día 2. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 2.3.1",
+              "direccion": "Dirección de ejemplo 2.3.1",
+              "descripcion": "Descripción de ejemplo 2.3.1."
+            },
+            {
+              "nombre": "Lugar de ejemplo 2.3.2",
+              "direccion": "Dirección de ejemplo 2.3.2",
+              "descripcion": "Descripción de ejemplo 2.3.2."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 2.3.1",
+              "direccion": "Dirección de ejemplo 2.3.1",
+              "descripcion": "Descripción de ejemplo 2.3.1."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

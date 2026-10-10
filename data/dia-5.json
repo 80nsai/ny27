@@ -1,0 +1,74 @@
+{
+  "_aviso": "DATOS DE EJEMPLO. Contenido ficticio para probar la app; no es un lugar real. Sustituir por el contenido del autor.",
+  "dia": 5,
+  "fecha": "2027-03-25",
+  "transporte": {
+    "minutos": 20,
+    "linea": "F",
+    "salida": "Estación de ejemplo 5-salida",
+    "direccion": "Dirección de ejemplo 5",
+    "llegada": "Estación de ejemplo 5-llegada"
+  },
+  "tramos": [
+    {
+      "etiqueta": "Mañana",
+      "zonas": [
+        {
+          "id": "d5-z1",
+          "nombre": "Zona de ejemplo A5",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 5.1.1",
+              "direccion": "Dirección de ejemplo 5.1.1",
+              "descripcion": "Descripción de ejemplo 5.1.1."
+            },
+            {
+              "nombre": "Lugar de ejemplo 5.1.2",
+              "direccion": "Dirección de ejemplo 5.1.2",
+              "descripcion": "Descripción de ejemplo 5.1.2."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": []
+        },
+        {
+          "id": "d5-z2",
+          "nombre": "Zona de ejemplo B5",
+          "lugares": [],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 5.2.1",
+              "direccion": "Dirección de ejemplo 5.2.1",
+              "descripcion": "Descripción de ejemplo 5.2.1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etiqueta": "Comida",
+      "zonas": [
+        {
+          "id": "d5-z3",
+          "nombre": "Zona de ejemplo C5",
+          "lugares": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 5.3.1",
+              "direccion": "Dirección de ejemplo 5.3.1",
+              "descripcion": "Descripción de ejemplo 5.3.1."
+            }
+          ],
+          "tiendas": [],
+          "cine": [],
+          "wc": []
+        }
+      ]
+    }
+  ]
+}

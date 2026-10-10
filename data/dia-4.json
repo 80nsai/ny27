@@ -1,0 +1,179 @@
+{
+  "_aviso": "DATOS DE EJEMPLO. Contenido ficticio para probar la app; no es un lugar real. Sustituir por el contenido del autor.",
+  "dia": 4,
+  "fecha": "2027-03-24",
+  "transporte": {
+    "minutos": 40,
+    "linea": "D",
+    "salida": "Estación de ejemplo 4-salida",
+    "direccion": "Dirección de ejemplo 4",
+    "llegada": "Estación de ejemplo 4-llegada",
+    "transbordos": "Cambio en Estación de ejemplo 4-cambio (línea E)"
+  },
+  "tramos": [
+    {
+      "etiqueta": "Mañana",
+      "zonas": [
+        {
+          "id": "d4-z1",
+          "nombre": "Zona de ejemplo A4",
+          "descripcion": "Texto de ejemplo de la zona 1 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 4.1.1",
+              "direccion": "Dirección de ejemplo 4.1.1",
+              "descripcion": "Descripción de ejemplo 4.1.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 4.1.1",
+              "direccion": "Dirección de ejemplo 4.1.1",
+              "descripcion": "Descripción de ejemplo 4.1.1."
+            }
+          ]
+        },
+        {
+          "id": "d4-z2",
+          "nombre": "Zona de ejemplo B4",
+          "descripcion": "Texto de ejemplo de la zona 2 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 4.2.1",
+              "direccion": "Dirección de ejemplo 4.2.1",
+              "descripcion": "Descripción de ejemplo 4.2.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 4.2.1",
+              "direccion": "Dirección de ejemplo 4.2.1",
+              "descripcion": "Descripción de ejemplo 4.2.1."
+            }
+          ]
+        },
+        {
+          "id": "d4-z3",
+          "nombre": "Zona de ejemplo C4",
+          "descripcion": "Texto de ejemplo de la zona 3 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 4.3.1",
+              "direccion": "Dirección de ejemplo 4.3.1",
+              "descripcion": "Descripción de ejemplo 4.3.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 4.3.1",
+              "direccion": "Dirección de ejemplo 4.3.1",
+              "descripcion": "Descripción de ejemplo 4.3.1."
+            }
+          ]
+        },
+        {
+          "id": "d4-z4",
+          "nombre": "Zona de ejemplo D4",
+          "descripcion": "Texto de ejemplo de la zona 4 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [
+            {
+              "nombre": "Lugar de ejemplo 4.4.1",
+              "direccion": "Dirección de ejemplo 4.4.1",
+              "descripcion": "Descripción de ejemplo 4.4.1."
+            }
+          ],
+          "comer": [],
+          "tiendas": [],
+          "cine": [],
+          "wc": [
+            {
+              "nombre": "WC de ejemplo 4.4.1",
+              "direccion": "Dirección de ejemplo 4.4.1",
+              "descripcion": "Descripción de ejemplo 4.4.1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "etiqueta": "Tarde",
+      "zonas": [
+        {
+          "id": "d4-z5",
+          "nombre": "Zona de ejemplo E4",
+          "descripcion": "Texto de ejemplo de la zona 5 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.5.1",
+              "direccion": "Dirección de ejemplo 4.5.1",
+              "descripcion": "Descripción de ejemplo 4.5.1."
+            }
+          ],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 4.5.1",
+              "direccion": "Dirección de ejemplo 4.5.1",
+              "descripcion": "Descripción de ejemplo 4.5.1."
+            }
+          ],
+          "cine": [],
+          "wc": []
+        },
+        {
+          "id": "d4-z6",
+          "nombre": "Zona de ejemplo F4",
+          "descripcion": "Texto de ejemplo de la zona 6 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.6.1",
+              "direccion": "Dirección de ejemplo 4.6.1",
+              "descripcion": "Descripción de ejemplo 4.6.1."
+            }
+          ],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 4.6.1",
+              "direccion": "Dirección de ejemplo 4.6.1",
+              "descripcion": "Descripción de ejemplo 4.6.1."
+            }
+          ],
+          "cine": [],
+          "wc": []
+        },
+        {
+          "id": "d4-z7",
+          "nombre": "Zona de ejemplo G4",
+          "descripcion": "Texto de ejemplo de la zona 7 del día 4. Explica qué es la zona y cómo es. Contenido ficticio.",
+          "lugares": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.7.1",
+              "direccion": "Dirección de ejemplo 4.7.1",
+              "descripcion": "Descripción de ejemplo 4.7.1."
+            }
+          ],
+          "tiendas": [
+            {
+              "nombre": "Tienda de ejemplo 4.7.1",
+              "direccion": "Dirección de ejemplo 4.7.1",
+              "descripcion": "Descripción de ejemplo 4.7.1."
+            }
+          ],
+          "cine": [],
+          "wc": []
+        }
+      ]
+    }
+  ]
+}
