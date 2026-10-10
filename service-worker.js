@@ -4,7 +4,7 @@
    - Sin conexión, o si la red tarda más de 3 s, se sirve la copia guardada.
    - Las peticiones a otros dominios (el servicio del tiempo) no pasan por aquí.
    Si se añaden o renombran archivos, hay que añadirlos a PRECACHE y subir la versión de CACHE. */
-var CACHE = 'ny27-v1';
+var CACHE = 'ny27-v2';
 var ESPERA_RED_MS = 3000;
 
 var PRECACHE = [
@@ -19,6 +19,9 @@ var PRECACHE = [
   'fonts/inter-latin-ext-400-normal.woff2', 'fonts/inter-latin-ext-500-normal.woff2', 'fonts/inter-latin-ext-700-normal.woff2',
   'img/cabecera.png',
   'icons/tiempo.svg', 'icons/tren.svg', 'icons/chevron-derecha.svg', 'icons/flecha-45.svg', 'icons/flecha-izquierda.svg',
+  'icons/day.svg', 'icons/night.svg', 'icons/cloudy-day-1.svg', 'icons/cloudy-night-1.svg', 'icons/cloudy.svg',
+  'icons/rainy-1.svg', 'icons/rainy-3.svg', 'icons/rainy-6.svg',
+  'icons/snowy-3.svg', 'icons/snowy-5.svg', 'icons/snowy-6.svg', 'icons/thunder.svg',
   'icons/pin.svg', 'icons/lugares.svg', 'icons/comer.svg', 'icons/tiendas.svg', 'icons/cine.svg', 'icons/wc.svg',
   'icons/apple-touch-icon.png', 'icons/app-icon-192.png', 'icons/app-icon-512.png', 'icons/app-icon-maskable-512.png'
 ];
