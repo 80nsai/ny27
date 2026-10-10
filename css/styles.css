@@ -82,6 +82,8 @@ ul{list-style:none}
 .d-xl{font-size:52px;font-weight:400;line-height:1.2;letter-spacing:-.02em;color:var(--white)}
 .pildora{display:inline-flex;align-items:center;gap:8px;padding:8px;border-radius:8px;
   background:var(--pill-bg);font-size:14px;line-height:1.4;color:var(--white);white-space:nowrap}
+/* Icono del tiempo: SVG con color propio, sin recolorear */
+.pildora img{display:block;flex:none;width:24px;height:24px}
 .dia-cuerpo{position:relative;z-index:1;padding:196px var(--margen) calc(16px + env(safe-area-inset-bottom,0px))}
 
 /* Tabs de días: seis, misma anchura, separación 8 */
