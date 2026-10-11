@@ -76,8 +76,26 @@
   }
 
   /* ---------- Datos ---------- */
+  // Formato plano: lista "zonas" en orden de visita, cada una con su campo "tramo" ("mañana", "tarde").
+  // Se agrupa en tramos consecutivos para que la app trabaje siempre con "tramos".
+  function agruparZonas(zonas) {
+    var tramos = [], actual = null;
+    zonas.forEach(function (z) {
+      if (!z) return;
+      var et = txt(z.tramo);
+      et = et ? et.charAt(0).toUpperCase() + et.slice(1).toLowerCase() : '';
+      if (!actual || (et && et !== actual.etiqueta)) {
+        actual = { etiqueta: et, zonas: [] };
+        tramos.push(actual);
+      }
+      actual.zonas.push(z);
+    });
+    return tramos;
+  }
+
   function normalizar(d) {
     if (!d || typeof d !== 'object') return null;
+    if (!Array.isArray(d.tramos) && Array.isArray(d.zonas)) d.tramos = agruparZonas(d.zonas);
     var k = 0;
     (Array.isArray(d.tramos) ? d.tramos : []).forEach(function (t) {
       (t && Array.isArray(t.zonas) ? t.zonas : []).forEach(function (z) {
