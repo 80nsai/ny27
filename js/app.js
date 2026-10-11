@@ -69,10 +69,10 @@
   function sty(ms) { return REDUCIR || !ms ? '' : ' style="--d:' + ms + 'ms"'; }
   function retrasoTarjeta(i, base) { return i < 6 ? base + i * 120 : base; }
 
-  // Enlace a Google Maps: ruta desde la ubicación actual hasta el sitio (nombre + dirección)
+  // Enlace a Google Maps: abre la ficha del sitio (nombre + dirección), no la ruta
   function mapsUrl(e) {
     var q = [txt(e.nombre), txt(e.direccion)].filter(Boolean).join(', ');
-    return 'https://www.google.com/maps/dir/?api=1&destination=' + encodeURIComponent(q);
+    return 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(q);
   }
 
   /* ---------- Datos ---------- */
