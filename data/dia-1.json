@@ -17,23 +17,23 @@
       "lugares": [
         {
           "nombre": "Times Square",
-          "direccion": "",
-          "descripcion": ""
+          "direccion": "1 Times Square, New York, NY 10036",
+          "descripcion": "Plaza icónica con pantallas gigantes y teatros."
         },
         {
           "nombre": "Rockefeller Center",
-          "direccion": "",
-          "descripcion": ""
+          "direccion": "30 Rockefeller Plaza, New York, NY 10112",
+          "descripcion": "Complejo emblemático de edificios y plazas."
         },
         {
           "nombre": "St. Patrick's Cathedral",
           "direccion": "",
-          "descripcion": ""
+          "descripcion": "Catedral neogótica situada entre las calles 50 y 51."
         },
         {
           "nombre": "5th Avenue",
           "direccion": "",
-          "descripcion": ""
+          "descripcion": "Avenida emblemática con tiendas y edificios conocidos."
         },
         {
           "nombre": "Louis Vuitton",
@@ -42,25 +42,25 @@
         },
         {
           "nombre": "Apple Store",
-          "direccion": "767 Fifth Avenue, New York, NY 10153",
-          "descripcion": "Famoso cubo de cristal de la 5.ª Avenida."
+          "direccion": "767 5th Ave, New York, NY 10153",
+          "descripcion": "Famoso cubo de cristal de la Quinta Avenida."
         }
       ],
       "comer": [
         {
           "nombre": "Dallas BBQ Times Square",
-          "direccion": "241 W 42nd St, New York, NY",
+          "direccion": "241 W 42nd St, New York, NY 10036",
           "descripcion": "Early Bird Special de 11:00 a 17:00: 11,99 $ una comida o 18,99 $ dos comidas; confirmar para 2027."
         },
         {
           "nombre": "Shake Shack",
-          "direccion": "",
-          "descripcion": "Elegir la ubicación que mejor encaje con la ruta."
+          "direccion": "691 8th Ave, New York, NY 10036",
+          "descripcion": "Hamburguesas, patatas y batidos en la zona de los teatros."
         },
         {
           "nombre": "Krispy Kreme Times Square",
-          "direccion": "",
-          "descripcion": "Comprobar la promoción Hot Light para 2027."
+          "direccion": "1601 Broadway, New York, NY 10019",
+          "descripcion": "Tienda emblemática de donuts; comprobar la promoción Hot Light para 2027."
         },
         {
           "nombre": "7th Street Burger",
@@ -68,32 +68,27 @@
           "descripcion": "Hamburguesería favorita de Bad Bunny en Nueva York."
         },
         {
-          "nombre": "7th Street Burger",
-          "direccion": "11 W 42nd St, New York, NY 10036",
-          "descripcion": "Hamburguesería favorita de Bad Bunny en Nueva York."
-        },
-        {
           "nombre": "Upside Pizza",
           "direccion": "598 8th Ave, New York, NY 10018",
-          "descripcion": "Porciones de pizza económicas: 4–6 $ por porción."
+          "descripcion": "Porciones de pizza económicas: 4–6 $ por porción; confirmar precios para 2027."
         },
         {
           "nombre": "ALDI",
-          "direccion": "311 W 42nd St, New York, NY",
+          "direccion": "311 W 42nd St, New York, NY 10036",
           "descripcion": "Comprar cena, desayunos, snacks y comida para el día siguiente."
         }
       ],
       "tiendas": [
         {
           "nombre": "FAO Schwarz",
-          "direccion": "",
-          "descripcion": "Famosa juguetería con piano gigante en el suelo."
+          "direccion": "30 Rockefeller Plaza, New York, NY 10111",
+          "descripcion": "Famosa juguetería con un piano gigante en el suelo."
         }
       ],
       "cine": [
         {
           "nombre": "Radio City Music Hall",
-          "direccion": "",
+          "direccion": "1260 6th Ave, New York, NY 10020",
           "descripcion": "Localización relacionada con Solo en casa 2."
         }
       ],
@@ -101,3 +96,6 @@
     }
   ]
 }
+Sitios que he dejado sin dirección confirmada con número de calle:
+- St. Patrick's Cathedral
+- 5th Avenue
