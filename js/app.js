@@ -146,7 +146,7 @@
     if (t.estado === 'ok') {
       temp.textContent = t.actual + '°';
       temp.hidden = false;
-      pil.innerHTML = '<img src="icons/' + t.icono + '.svg" alt="" width="24" height="24"><span>Máx. ' + t.max + '°</span><span aria-hidden="true">·</span><span>Mín. ' + t.min + '°</span>';
+      pil.innerHTML = '<img src="icons/weather/' + t.icono + '.svg" alt="" width="24" height="24"><span>Máx. ' + t.max + '°</span><span aria-hidden="true">·</span><span>Mín. ' + t.min + '°</span>';
       pil.hidden = false;
     } else if (t.estado === 'error') {
       temp.hidden = true;

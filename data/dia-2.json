@@ -141,7 +141,13 @@
               "descripcion": "Descripción de ejemplo 2.3.2."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 2.3.1",
+              "direccion": "Dirección de ejemplo 2.3.1",
+              "descripcion": "Descripción de ejemplo 2.3.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [

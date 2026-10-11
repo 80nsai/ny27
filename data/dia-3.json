@@ -30,7 +30,13 @@
               "descripcion": "Descripción de ejemplo 3.1.2."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 3.1.1",
+              "direccion": "Dirección de ejemplo 3.1.1",
+              "descripcion": "Descripción de ejemplo 3.1.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
@@ -67,7 +73,13 @@
           "nombre": "Zona de ejemplo C3",
           "descripcion": "Texto de ejemplo de la zona 3 del día 3. Explica qué es la zona y cómo es. Contenido ficticio.",
           "lugares": [],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 3.3.1",
+              "direccion": "Dirección de ejemplo 3.3.1",
+              "descripcion": "Descripción de ejemplo 3.3.1."
+            }
+          ],
           "tiendas": [
             {
               "nombre": "Tienda de ejemplo 3.3.1",

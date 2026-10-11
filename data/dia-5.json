@@ -28,7 +28,13 @@
               "descripcion": "Descripción de ejemplo 5.1.2."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 5.1.1",
+              "direccion": "Dirección de ejemplo 5.1.1",
+              "descripcion": "Descripción de ejemplo 5.1.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": []
@@ -37,7 +43,13 @@
           "id": "d5-z2",
           "nombre": "Zona de ejemplo B5",
           "lugares": [],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 5.2.1",
+              "direccion": "Dirección de ejemplo 5.2.1",
+              "descripcion": "Descripción de ejemplo 5.2.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
@@ -51,7 +63,7 @@
       ]
     },
     {
-      "etiqueta": "Comida",
+      "etiqueta": "Tarde",
       "zonas": [
         {
           "id": "d5-z3",

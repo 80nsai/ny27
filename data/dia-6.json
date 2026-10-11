@@ -70,7 +70,13 @@
               "descripcion": "Descripción de ejemplo 6.2.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 6.2.1",
+              "direccion": "Dirección de ejemplo 6.2.1",
+              "descripcion": "Descripción de ejemplo 6.2.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": []
@@ -78,7 +84,7 @@
       ]
     },
     {
-      "etiqueta": "Comida",
+      "etiqueta": "Tarde",
       "zonas": [
         {
           "id": "d6-z3",
@@ -100,12 +106,7 @@
           "tiendas": [],
           "cine": [],
           "wc": []
-        }
-      ]
-    },
-    {
-      "etiqueta": "Tarde",
-      "zonas": [
+        },
         {
           "id": "d6-z4",
           "nombre": "Zona de ejemplo D6",
@@ -117,7 +118,13 @@
               "descripcion": "Descripción de ejemplo 6.4.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 6.4.1",
+              "direccion": "Dirección de ejemplo 6.4.1",
+              "descripcion": "Descripción de ejemplo 6.4.1."
+            }
+          ],
           "tiendas": [
             {
               "nombre": "Tienda de ejemplo 6.4.1",

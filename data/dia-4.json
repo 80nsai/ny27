@@ -25,7 +25,13 @@
               "descripcion": "Descripción de ejemplo 4.1.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.1.1",
+              "direccion": "Dirección de ejemplo 4.1.1",
+              "descripcion": "Descripción de ejemplo 4.1.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
@@ -47,7 +53,13 @@
               "descripcion": "Descripción de ejemplo 4.2.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.2.1",
+              "direccion": "Dirección de ejemplo 4.2.1",
+              "descripcion": "Descripción de ejemplo 4.2.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
@@ -69,7 +81,13 @@
               "descripcion": "Descripción de ejemplo 4.3.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.3.1",
+              "direccion": "Dirección de ejemplo 4.3.1",
+              "descripcion": "Descripción de ejemplo 4.3.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
@@ -91,7 +109,13 @@
               "descripcion": "Descripción de ejemplo 4.4.1."
             }
           ],
-          "comer": [],
+          "comer": [
+            {
+              "nombre": "Sitio para comer de ejemplo 4.4.1",
+              "direccion": "Dirección de ejemplo 4.4.1",
+              "descripcion": "Descripción de ejemplo 4.4.1."
+            }
+          ],
           "tiendas": [],
           "cine": [],
           "wc": [
