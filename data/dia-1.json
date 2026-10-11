@@ -1,209 +1,103 @@
 {
-  "_aviso": "DATOS DE EJEMPLO. Contenido ficticio para probar la app; no es un lugar real. Sustituir por el contenido del autor.",
   "dia": 1,
   "fecha": "2027-03-21",
   "transporte": {
-    "minutos": 25,
-    "linea": "A",
-    "salida": "Estación de ejemplo 1-salida",
-    "direccion": "Dirección de ejemplo 1",
-    "llegada": "Estación de ejemplo 1-llegada",
-    "transbordos": "Sin transbordos"
+    "minutos": "",
+    "linea": "",
+    "salida": "",
+    "direccion": "",
+    "transbordos": "",
+    "llegada": ""
   },
-  "tramos": [
+  "zonas": [
     {
-      "etiqueta": "Mañana",
-      "zonas": [
+      "nombre": "Midtown",
+      "tramo": "tarde",
+      "descripcion": "",
+      "lugares": [
         {
-          "id": "d1-z1",
-          "nombre": "Zona de ejemplo A1",
-          "descripcion": "Texto de ejemplo de la zona 1 del día 1. Explica qué es la zona y cómo es. Contenido ficticio.",
-          "lugares": [
-            {
-              "nombre": "Lugar de ejemplo con un nombre muy largo para comprobar el salto de línea en la tarjeta",
-              "direccion": "Dirección de ejemplo 1.1.1",
-              "descripcion": "Descripción de ejemplo larga para comprobar cómo se comporta el texto cuando ocupa dos líneas dentro de la tarjeta."
-            },
-            {
-              "nombre": "Lugar de ejemplo 1.1.2",
-              "direccion": "Dirección de ejemplo 1.1.2",
-              "descripcion": "Descripción de ejemplo 1.1.2."
-            },
-            {
-              "nombre": "Lugar de ejemplo 1.1.3",
-              "direccion": "Dirección de ejemplo 1.1.3",
-              "descripcion": "Descripción de ejemplo 1.1.3."
-            }
-          ],
-          "comer": [
-            {
-              "nombre": "Sitio para comer de ejemplo 1.1.1",
-              "direccion": "Dirección de ejemplo 1.1.1",
-              "descripcion": "Descripción de ejemplo 1.1.1."
-            },
-            {
-              "nombre": "Sitio para comer de ejemplo 1.1.2",
-              "direccion": "Dirección de ejemplo 1.1.2",
-              "descripcion": "Descripción de ejemplo 1.1.2."
-            }
-          ],
-          "tiendas": [
-            {
-              "nombre": "Tienda de ejemplo 1.1.1",
-              "direccion": "Dirección de ejemplo 1.1.1",
-              "descripcion": "Descripción de ejemplo 1.1.1."
-            },
-            {
-              "nombre": "Tienda de ejemplo 1.1.2",
-              "direccion": "Dirección de ejemplo 1.1.2",
-              "descripcion": "Descripción de ejemplo 1.1.2."
-            }
-          ],
-          "cine": [
-            {
-              "nombre": "Escenario de ejemplo 1.1.1",
-              "direccion": "Dirección de ejemplo 1.1.1",
-              "descripcion": "Descripción de ejemplo 1.1.1."
-            }
-          ],
-          "wc": [
-            {
-              "nombre": "WC de ejemplo 1.1.1",
-              "direccion": "Dirección de ejemplo 1.1.1",
-              "descripcion": "Descripción de ejemplo 1.1.1."
-            },
-            {
-              "nombre": "WC de ejemplo 1.1.2",
-              "direccion": "Dirección de ejemplo 1.1.2",
-              "descripcion": "Descripción de ejemplo 1.1.2."
-            }
-          ]
+          "nombre": "Times Square",
+          "direccion": "",
+          "descripcion": ""
         },
         {
-          "id": "d1-z2",
-          "nombre": "Zona de ejemplo B1",
-          "descripcion": "Texto de ejemplo de la zona 2 del día 1. Explica qué es la zona y cómo es. Contenido ficticio.",
-          "lugares": [
-            {
-              "nombre": "Lugar de ejemplo 1.2.1",
-              "direccion": "Dirección de ejemplo 1.2.1",
-              "descripcion": "Descripción de ejemplo 1.2.1."
-            }
-          ],
-          "comer": [
-            {
-              "nombre": "Sitio para comer de ejemplo 1.2.1",
-              "direccion": "Dirección de ejemplo 1.2.1",
-              "descripcion": "Descripción de ejemplo 1.2.1."
-            }
-          ],
-          "tiendas": [],
-          "cine": [],
-          "wc": [
-            {
-              "nombre": "WC de ejemplo 1.2.1",
-              "direccion": "Dirección de ejemplo 1.2.1",
-              "descripcion": "Descripción de ejemplo 1.2.1."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "etiqueta": "Comida",
-      "zonas": [
-        {
-          "id": "d1-z3",
-          "nombre": "Zona de ejemplo C1",
-          "descripcion": "Texto de ejemplo de la zona 3 del día 1. Explica qué es la zona y cómo es. Contenido ficticio.",
-          "lugares": [],
-          "comer": [
-            {
-              "nombre": "Sitio para comer de ejemplo 1.3.1",
-              "direccion": "Dirección de ejemplo 1.3.1",
-              "descripcion": "Descripción de ejemplo 1.3.1."
-            },
-            {
-              "nombre": "Sitio para comer de ejemplo 1.3.2",
-              "direccion": "Dirección de ejemplo 1.3.2",
-              "descripcion": "Descripción de ejemplo 1.3.2."
-            }
-          ],
-          "tiendas": [],
-          "cine": [],
-          "wc": [
-            {
-              "nombre": "WC de ejemplo 1.3.1",
-              "direccion": "Dirección de ejemplo 1.3.1",
-              "descripcion": "Descripción de ejemplo 1.3.1."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "etiqueta": "Tarde",
-      "zonas": [
-        {
-          "id": "d1-z4",
-          "nombre": "Zona de ejemplo D1",
-          "descripcion": "Texto de ejemplo de la zona 4 del día 1. Explica qué es la zona y cómo es. Contenido ficticio.",
-          "lugares": [
-            {
-              "nombre": "Lugar de ejemplo 1.4.1",
-              "direccion": "Dirección de ejemplo 1.4.1",
-              "descripcion": "Descripción de ejemplo 1.4.1."
-            },
-            {
-              "nombre": "Lugar de ejemplo 1.4.2",
-              "direccion": "Dirección de ejemplo 1.4.2",
-              "descripcion": "Descripción de ejemplo 1.4.2."
-            }
-          ],
-          "comer": [],
-          "tiendas": [
-            {
-              "nombre": "Tienda de ejemplo 1.4.1",
-              "direccion": "Dirección de ejemplo 1.4.1",
-              "descripcion": "Descripción de ejemplo 1.4.1."
-            }
-          ],
-          "cine": [
-            {
-              "nombre": "Escenario de ejemplo 1.4.1",
-              "direccion": "Dirección de ejemplo 1.4.1",
-              "descripcion": "Descripción de ejemplo 1.4.1."
-            },
-            {
-              "nombre": "Escenario de ejemplo 1.4.2",
-              "direccion": "Dirección de ejemplo 1.4.2",
-              "descripcion": "Descripción de ejemplo 1.4.2."
-            }
-          ],
-          "wc": [
-            {
-              "nombre": "WC de ejemplo 1.4.1",
-              "direccion": "Dirección de ejemplo 1.4.1",
-              "descripcion": "Descripción de ejemplo 1.4.1."
-            }
-          ]
+          "nombre": "Rockefeller Center",
+          "direccion": "",
+          "descripcion": ""
         },
         {
-          "id": "d1-z5",
-          "nombre": "Zona de ejemplo E1",
-          "lugares": [
-            {
-              "nombre": "Lugar de ejemplo 1.5.1",
-              "direccion": "Dirección de ejemplo 1.5.1",
-              "descripcion": "Descripción de ejemplo 1.5.1."
-            }
-          ],
-          "comer": [],
-          "tiendas": [],
-          "cine": [],
-          "wc": []
+          "nombre": "St. Patrick's Cathedral",
+          "direccion": "",
+          "descripcion": ""
+        },
+        {
+          "nombre": "5th Avenue",
+          "direccion": "",
+          "descripcion": ""
+        },
+        {
+          "nombre": "Louis Vuitton",
+          "direccion": "6 E 57th St, New York, NY 10022",
+          "descripcion": "Edificio con fachada que simula maletas."
+        },
+        {
+          "nombre": "Apple Store",
+          "direccion": "767 Fifth Avenue, New York, NY 10153",
+          "descripcion": "Famoso cubo de cristal de la 5.ª Avenida."
         }
-      ]
+      ],
+      "comer": [
+        {
+          "nombre": "Dallas BBQ Times Square",
+          "direccion": "241 W 42nd St, New York, NY",
+          "descripcion": "Early Bird Special de 11:00 a 17:00: 11,99 $ una comida o 18,99 $ dos comidas; confirmar para 2027."
+        },
+        {
+          "nombre": "Shake Shack",
+          "direccion": "",
+          "descripcion": "Elegir la ubicación que mejor encaje con la ruta."
+        },
+        {
+          "nombre": "Krispy Kreme Times Square",
+          "direccion": "",
+          "descripcion": "Comprobar la promoción Hot Light para 2027."
+        },
+        {
+          "nombre": "7th Street Burger",
+          "direccion": "485 7th Ave, New York, NY 10018",
+          "descripcion": "Hamburguesería favorita de Bad Bunny en Nueva York."
+        },
+        {
+          "nombre": "7th Street Burger",
+          "direccion": "11 W 42nd St, New York, NY 10036",
+          "descripcion": "Hamburguesería favorita de Bad Bunny en Nueva York."
+        },
+        {
+          "nombre": "Upside Pizza",
+          "direccion": "598 8th Ave, New York, NY 10018",
+          "descripcion": "Porciones de pizza económicas: 4–6 $ por porción."
+        },
+        {
+          "nombre": "ALDI",
+          "direccion": "311 W 42nd St, New York, NY",
+          "descripcion": "Comprar cena, desayunos, snacks y comida para el día siguiente."
+        }
+      ],
+      "tiendas": [
+        {
+          "nombre": "FAO Schwarz",
+          "direccion": "",
+          "descripcion": "Famosa juguetería con piano gigante en el suelo."
+        }
+      ],
+      "cine": [
+        {
+          "nombre": "Radio City Music Hall",
+          "direccion": "",
+          "descripcion": "Localización relacionada con Solo en casa 2."
+        }
+      ],
+      "wc": []
     }
   ]
 }
